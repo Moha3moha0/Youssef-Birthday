@@ -82,4 +82,5 @@ function postMessage() {
   nameInput.value = "";
   messageInput.value = "";
 }
-
+document.getElementById("postBtn").addEventListener("click", postMessage);
+loadMessages(displayMessages);
