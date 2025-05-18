@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Youssef</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Happy Birthday, Youssef</h1>
+  <p>Wishing you an amazing day full of joy, fun, and surprises!</p>
+
+  <div class="photo-container">
+    <img src="Screenshot_20250516-182411_WhatsApp.jpg" alt="Youssef's Photo" />
+  </div>
+
+  <div class="balloons">
+    <div class="balloon" style="left:10%"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+  <section style="margin-top: 30px; width: 80%; max-width: 500px;">
+    <h2 style="color: #ff4081;">Write a Birthday Message for Youssef</h2>
+    <input
+      id="nameInput"
+      type="text"
+      placeholder="Your name"
+      style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #ff4081; margin-top: 10px; font-size: 1em;"
+    />
+    <textarea
+      id="messageInput"
+      rows="4"
+      placeholder="Write your message here"
+      style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #ff4081; margin-top: 10px; resize: none; font-size: 1em;"
+    ></textarea>
+    <button id="postBtn" style="margin-top: 10px;">Post Message</button>
+    <div id="messages" style="margin-top: 20px;"></div>
+  </section>
+
+  <footer
+    style="
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      background-color: #ff4081;
+      color: white;
+      text-align: center;
+      font-size: 1em;
+      z-index: 1000;
+    "
+  >
+    &copy; All rights reserved by your loyal friend Moha❤.
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
