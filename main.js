@@ -1,3 +1,4 @@
+// main.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
 import {
   getDatabase,
@@ -6,7 +7,6 @@ import {
   onValue,
   query,
   orderByChild,
-
 } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-database.js";
 
 const firebaseConfig = {
@@ -73,7 +73,7 @@ function postMessage() {
   const message = messageInput.value.trim();
   
   if (name === "" || message === "") {
-    alert("Write your message to youssef");
+    alert("Please write your message to Youssef");
     return;
   }
   
@@ -82,5 +82,10 @@ function postMessage() {
   nameInput.value = "";
   messageInput.value = "";
 }
-document.getElementById("postBtn").addEventListener("click", postMessage);
-loadMessages(displayMessages);
+
+window.onload = () => {
+  loadMessages(displayMessages);
+  
+  const postBtn = document.getElementById("postBtn");
+  postBtn.onclick = postMessage;
+};
